@@ -3,27 +3,11 @@
                 <div class="header-top fl-wrap">
                     <div class="container">
                         <div class="logo-holder">
-                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                           <a href="index.html"><img src="images/LOGO_logo.png" alt=""></a>
                         </div>
-                        <a href="dashboard-add-listing.html" class="add-hotel">Add Your Hotel <span><i class="far fa-plus"></i></span></a>                     
-                        <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
-                        <div class="lang-wrap">
-                            <div class="show-lang"><img src="images/lan/1.png" alt=""> <span>Eng</span><i class="fa fa-caret-down"></i></div>
-                            <ul class="lang-tooltip green-bg">
-                                <li><a href="#"><img src="images/lan/4.png" alt=""> De</a></li>
-                                <li><a href="#"><img src="images/lan/5.png" alt=""> It</a></li>
-                                <li><a href="#"><img src="images/lan/2.png" alt=""> Fr</a></li>
-                                <li><a href="#"><img src="images/lan/3.png" alt=""> Es</a></li>
-                            </ul>
-                        </div>
-                        <div class="currency-wrap">
-                            <div class="show-currency-tooltip"><i class="fas fa-dollar-sign"></i> <span>USD <i class="fa fa-caret-down"></i> </span></div>
-                            <ul class="currency-tooltip">
-                                <li><a href="#"><i class="far fa-euro-sign"></i> EUR</a></li>
-                                <li><a href="#"><i class="far fa-pound-sign"></i> GBP</a></li>
-                                <li><a href="#"><i class="far fa-ruble-sign"></i>RUR</a></li>
-                            </ul>
-                        </div>
+                        <a href="dashboard-add-listing.html" class="add-hotel">Crea tu negocio <span><i class="far fa-plus"></i></span></a>                     
+                        <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Entrar</div>
+                  
                     </div>
                 </div>
                 <!-- header-top end-->
@@ -35,14 +19,12 @@
                         <div class="header-user-menu">
                             <div class="header-user-name">
                                 <span><img src="images/avatar/1.jpg" alt=""></span>
-                                My account
+                                Mi Cuenta
                             </div>
                             <ul>
-                                <li><a href="dashboard-myprofile.html"> Edit profile</a></li>
-                                <li><a href="dashboard-add-listing.html"> Add Listing</a></li>
-                                <li><a href="dashboard-bookings.html">  Bookings  </a></li>
-                                <li><a href="dashboard-review.html"> Reviews </a></li>
-                                <li><a href="#">Log Out</a></li>
+                                <li><a href="dashboard-myprofile.html"> Editar perfil</a></li>
+                             
+                                <li><a href="#">Salir</a></li>
                             </ul>
                         </div>
                         <div class="home-btn"><a href="index.html"><i class="fas fa-home"></i></a></div>

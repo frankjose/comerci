@@ -1,23 +1,11 @@
 <!-- list-main-wrap-title-->
 <div class="list-main-wrap-title fl-wrap">
-    <h2>Results For : <span>New York </span></h2>
+    <h2>Resultados de: <span>  Restaurantes   </span></h2>
 </div>
 <!-- list-main-wrap-title end-->
 <!-- list-main-wrap-opt-->
 <div class="list-main-wrap-opt fl-wrap">
-    <!-- price-opt-->
-    <div class="price-opt">
-        <span class="price-opt-title">Sort results by:</span>
-        <div class="listsearch-input-item">
-            <select data-placeholder="Popularity" class="chosen-select no-search-select">
-                <option>Popularity</option>
-                <option>Average rating</option>
-                <option>Price: low to high</option>
-                <option>Price: high to low</option>
-            </select>
-        </div>
-    </div>
-    <!-- price-opt end-->
+
     <!-- price-opt-->
     <div class="grid-opt">
         <ul>
@@ -163,5 +151,27 @@
 
 <script>
     $('.chosen-select').niceSelect();
+
+    $(".grid-opt li span").on("click", function () {
+    $(".listing-item").matchHeight({
+        remove: true
+    });
+    setTimeout(function () {
+        $(".listing-item").matchHeight();
+    }, 50);
+    $(".grid-opt li span").removeClass("act-grid-opt");
+    $(this).addClass("act-grid-opt");
+    if ($(this).hasClass("two-col-grid")) {
+        $(".listing-item").removeClass("has_one_column");
+        $(".listing-item").addClass("has_two_column");
+    } else if ($(this).hasClass("one-col-grid")) {
+        $(".listing-item").addClass("has_one_column");
+    } else {
+        $(".listing-item").removeClass("has_one_column").removeClass("has_two_column");
+    }
+});
+$(".notification-close").on("click", function () {
+    $(this).parent(".notification").slideUp(500);
+});
 
 </script>
