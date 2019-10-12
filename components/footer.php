@@ -1,12 +1,13 @@
                 <!--subscribe-wrap-->
-                <div class="subscribe-wrap color-bg  fl-wrap">
+<!--subscribe-wrap-->
+<div class="subscribe-wrap color-bg  fl-wrap">
                     <div class="container">
                         <div class="sp-bg"> </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="subscribe-header">
-                                    <h3>Subscribe</h3>
-                                    <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                    <h3>Subscribirse</h3>
+                                    <p>Deseas recibir información sobre el mapa de emprendimiento 2019 en Jamundí</p>
                                 </div>
                             </div>
                             <div class="col-md-1"></div>
@@ -15,8 +16,8 @@
                                     <div class="subscribe-widget fl-wrap">
                                         <div class="subcribe-form">
                                             <form id="subscribe">
-                                                <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Enter Your Email" spellcheck="false" type="text">
-                                                <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fas fa-rss-square"></i> Subscribe</button>
+                                                <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Correo electrónico" spellcheck="false" type="text">
+                                                <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fas fa-rss-square"></i> Subscribirse</button>
                                                 <label for="subscribe-email" class="subscribe-message"></label>
                                             </form>
                                         </div>
@@ -29,14 +30,14 @@
                 </div>
                 <!--subscribe-wrap end -->
                 <!--footer-inner-->
-                <div class="footer-inner">
+              <div class="footer-inner">
                     <div class="container">
                         <!--footer-fw-widget-->
                         <div class="footer-fw-widget fl-wrap">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="footer-carousel-title">
-                                        Our partners
+                                        Nuestros patrocinadores
                                     </div>
                                 </div>
                                 <div class="col-md-9">
@@ -86,84 +87,30 @@
                             <!--footer-widget -->
                             <div class="col-md-4">
                                 <div class="footer-widget fl-wrap">
-                                    <h3>About Us</h3>
                                     <div class="footer-contacts-widget fl-wrap">
-                                        <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
                                         <ul  class="footer-contacts fl-wrap">
-                                            <li><span><i class="fal fa-envelope"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
-                                            <li> <span><i class="fal fa-map-marker-alt"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
-                                            <li><span><i class="fal fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
+                                            <li><span><i class="fal fa-envelope"></i> Correo :</span><a href="#" target="_blank">jefetic@jamundi.gov.co</a></li>
+                                            <li> <span><i class="fal fa-map-marker-alt"></i> Dirección :</span><a href="#" target="_blank">Cra. 10 #9-74, Jamundí, Valle del Cauca</a></li>
+                                            <li><span><i class="fal fa-phone"></i> Teléfono :</span><a href="#">+57(2) 516 62 06</a></li>
                                         </ul>
                                         <div class="footer-social">
-                                            <span>Find us : </span>
+                                            <span>Siguenos : </span>
                                             <ul>
-                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                                                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!--footer-widget end-->
-                            <!--footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget fl-wrap">
-                                    <h3>Our Last News</h3>
-                                    <div class="widget-posts fl-wrap">
-                                        <ul>
-                                            <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Vivamus dapibus rutrum</a>
-                                                    <span class="widget-posts-date"> 21 Mar 09.05 </span>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title=""> In hac habitasse platea</a>
-                                                    <span class="widget-posts-date"> 7 Mar 18.21 </span>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Tortor tempor in porta</a>
-                                                    <span class="widget-posts-date"> 7 Mar 16.42 </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--footer-widget end-->
-                            <!--footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget fl-wrap">
-                                    <h3>Our  Twitter</h3>
-                                    <div id="footer-twiit" class="fl-wrap"></div>
-                                    <a href="#" class="twitter-link" target="_blank">Follow</a>
-                                </div>
-                            </div>
-                            <!--footer-widget end-->
+                            
+
                         </div>
                         <div class="clearfix"></div>
-                        <!--footer-widget -->
-                        <div class="footer-widget">
-                            <div class="row">
-                                <div class="col-md-4"><a class="contact-btn color-bg" href="contact.html">Get In Touch<i class="fal fa-envelope"></i></a></div>
-                                <div class="col-md-8">
-                                    <div class="customer-support-widget fl-wrap">
-                                        <h4>Customer support : </h4>
-                                        <a href="tel:+19012300888" class="cs-mumber">+1(901)2300888</a>
-                                        <a href="tel:+19012300888" class="cs-mumber-button color2-bg">Call Now <i class="far fa-phone-volume"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--footer-widget end -->
+
                     </div>
                 </div>
                 <!--footer-inner end -->
@@ -174,18 +121,12 @@
                     <div class="container">
                         <div class="copyright"> &#169; EasyBook 2018 .  All rights reserved.</div>
                         <div class="subfooter-lang">
-                            <div class="subfooter-show-lang"><span>Eng</span><i class="fa fa-caret-up"></i></div>
-                            <ul class="subfooter-lang-tooltip">
-                                <li><a href="#">Dutch</a></li>
-                                <li><a href="#">Italian</a></li>
-                                <li><a href="#">French</a></li>
-                                <li><a href="#">Spanish</a></li>
-                            </ul>
+                            <div class="subfooter-show-lang"><span>Esp</span><i class="fa fa-caret-up"></i></div>
                         </div>
                         <div class="subfooter-nav">
                             <ul>
-                                <li><a href="#">Terms of use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terminos de uso</a></li>
+                                <li><a href="#">Politicas de privacidad</a></li>
                                 <li><a href="#">Blog</a></li>
                             </ul>
                         </div>
