@@ -1,3 +1,28 @@
+<?php 
+require "../../model/MySQL.php";
+
+    $mySQL = new MySQL();
+    $mySQL->conectar();
+
+
+        $consulta = $mySQL->efectuarConsulta("SELECT 
+        p.id,
+        p.nombre as producto,
+        p.descuento,
+        p.foto,
+        p.precio,
+        e.direccion,
+        e.calificacion
+        
+        
+        FROM 
+        commerci.productos p INNER JOIN commerci.establecimiento e ON 
+        p.establecimiento_id = e.id
+        ");
+
+
+?>
+
 <!-- list-main-wrap-title-->
 <div class="list-main-wrap-title fl-wrap">
     <h2>Resultados de: <span>  Restaurantes   </span></h2>
@@ -19,24 +44,29 @@
 <!-- listing-item-container -->
 <div class="listing-item-container init-grid-items fl-wrap">
     <!-- listing-item  -->
+
+    <?php  while ($row = mysqli_fetch_assoc($consulta)){  ?>
     <div class="listing-item">
         <div class="hotel-card fl-wrap">
             <div class="geodir-category-img card-post">
-                <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
-                <div class="listing-counter">Awg/Night <strong>$320</strong></div>
-                <div class="sale-window big-sale">Sale 50%</div>
+                <a href="listing-single.html"><img src="<?php echo  $row['foto'] ?>" alt=""></a>
+                <div class="listing-counter"> <strong>$<?php echo  $row['precio'] ?></strong></div>
+                <?php $int = (int)$row['descuento']; if( $int > 0){ ?>
+                <div class="sale-window">Descuento <?php echo  $row['descuento'] ?>%</div>
+                <?php } ?>
                 <div class="geodir-category-opt">
                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
-                    <h4><a href="listing-single.html">Premium Plaza Hotel</a></h4>
-                    <div class="geodir-category-location"><a href="#0" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a></div>
+                    <h4><a href="listing-single.html"><?php echo $row['producto'] ?></a></h4>
+                    <div class="geodir-category-location"><a href="#0" class="map-item"><i class="fas fa-map-marker-alt"></i> <?php echo  $row['direccion'] ?></a></div>
                     <div class="rate-class-name">
                         <div class="score"><strong>Very Good</strong>27 Reviews </div>
-                        <span>5.0</span>
+                        <span><?php echo  $row['calificacion'] ?></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <?php } ?>
     <!-- listing-item end -->
     <!-- listing-item  -->
     <div class="listing-item">

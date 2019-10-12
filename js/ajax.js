@@ -22,6 +22,8 @@ function loadComponent(url, divCarga){
     //return false;
 }
 
+   
+
 function recargaPagina(url, divCarga){
 
     $.ajax({

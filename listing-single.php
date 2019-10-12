@@ -551,7 +551,7 @@
                                                             <h3>PUESTO DE GALLINA</h3>
                                                             <h5>Recomendado para: <span>1 persona</span></h5>
                                                         </div>
-                                                        <p>Plato de sancocho de gallina, para 1 persona con gallina o pollo sudado y/o a la brasa con rica ensalada y arroz. .</p>
+                                                        <p>Plato de sancocho de gallina, para 1 persona con gallina o pollo sudado y/o a la brasa con rica ensalada y arroz.</p>
                                                       <div class="facilities-list fl-wrap">
 
                                                             <a href="rooms/room1.html" class="btn color-bg ajax-link">Details<i class="fas fa-caret-right"></i></a>

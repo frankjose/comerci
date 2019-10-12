@@ -1,3 +1,16 @@
+<?php
+
+require "../../model/MySQL.php";
+
+$mySQL = new MySQL();
+$mySQL->conectar();
+
+$consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
+
+
+
+?>
+
 <div class="container">
 
     <div class="row">
@@ -5,7 +18,7 @@
         <div class="profile-edit-container">
             <div class="custom-form">
                 <label>Búsca cualquier producto o servicio <i class="fal fa-briefcase"></i></label>
-                <input type="text" placeholder="Búsca productos o servicios" value="" style="width: 60%">
+                <input id="palabrasClave" type="text" placeholder="Búsca productos o servicios" value="" style="width: 60%">
 
             </div>
         </div>
@@ -18,27 +31,11 @@
             <div class="col-list-search-input-item in-loc-dec fl-wrap not-vis-arrow">
                 <label>Categoría</label>
                 <div class="listsearch-input-item">
-                    <select data-placeholder="City" class="chosen-select">
-                        <option>Todas</option>
-                        <option>Restaurantes</option>
-                        <option>Bienestar</option>
-                        <option>Belleza</option>
-                        <option>Tecnologia</option>
-                        <option>Moda</option>
-                        <option>Belleza</option>
-                        <option>Hogar</option>
-                        <option>Floristería</option>
-                        <option>Regalos</option>
-                        <option>Servicios</option>
-                        <option>Mascotas</option>
-                        <option>Eventos</option>
-                        <option>Deportes</option>
-                        <option>Bonos</option>
-                        <option>Libros</option>
-                        <option>Jugeteria</option>
-                        <option>Bebés y Niños</option>
-                        <option>Halloween</option>
-                        <option>Eventos</option>
+                    <select data-placeholder="City" class="chosen-select" id="Selectcategoria" onchange="getSubCategoria($(this))">
+                        <option>Todos</option>
+                        <?php while ($row = mysqli_fetch_assoc($consulta)) {  ?>
+                            <option value="<?php echo $row["id"] ?>"><?php echo $row["nombre"] ?></option>
+                        <?php } ?>
                     </select>
                 </div>
             </div>
@@ -49,23 +46,28 @@
             <div class="col-list-search-input-item fl-wrap location autocomplete-container">
                 <label>Sub Categoría</label>
                 <div class="listsearch-input-item">
-                    <select data-placeholder="City" class="chosen-select">
-                        <option>Todas</option>
-                        <option>Postres</option>
-                        <option>Hamburguesas</option>
-                        <option>Pizza</option>
-                        <option>Pollo</option>
-                        <option>Saludable</option>
-                        <option>Desayuno</option>
-                        <option>Sándwiche</option>
-                        <option>Panaderia</option>
-                        <option>Café</option>
+                    <select data-placeholder="City" class="chosen-select" id="subCategoria"> 
+
                     </select>
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="col-list-search-input-item fl-wrap location autocomplete-container">
+                <div class="col-list-search-input-item fl-wrap">
+                    <button class="header-search-button" onclick="resultadosFiltrados()">Búscar <i class="far fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
 
     </div>
+
+
+
+
+
+
     <div class="search-opt-wrap fl-wrap">
         <div class="search-opt-wrap-container">
             <!-- col-list-search-input-item -->
@@ -73,18 +75,23 @@
             <!-- col-list-search-input-item end -->
             <!-- col-list-search-input-item -->
             <div class="search-input-item">
-                <div class="range-slider-title">Rango de precio</div>
-                <div class="range-slider-wrap fl-wrap">
-                    <input class="range-slider" data-from="300" data-to="1200" data-step="50" data-min="50" data-max="2000" data-prefix="$">
+                <div class="range-slider-title">
+                    <ul class="fl-wrap filter-tags half-tags">
+
+                        <li>
+                            <input id="check-bb23" type="checkbox" name="check" onclick="mostrarRangosPrecios($(this))">
+                            <label for="check-bb23">Por rango de precio</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="range-slider-wrap fl-wrap" id="rangosDePrecios" style="display: none">
+                    <input class="range-slider" data-from="30000" data-to="90000" data-min="1000" data-max="500000" data-prefix="$">
                 </div>
             </div>
+            <br>
             <!-- col-list-search-input-item end -->
             <!-- col-list-search-input-item -->
-            <div class="search-input-item small-input ">
-                <div class="col-list-search-input-item fl-wrap">
-                    <button class="header-search-button" onclick="window.location.href='listing.html'">Búscar <i class="far fa-search"></i></button>
-                </div>
-            </div>
+         
             <!-- col-list-search-input-item end -->
             <!-- hidden-listing-filter -->
             <div class="hidden-listing-filter fl-wrap">
@@ -121,7 +128,7 @@
                             <div class="search-opt-container fl-wrap">
                                 <!-- Checkboxes -->
                                 <ul class="fl-wrap filter-tags half-tags">
-                                  
+
                                     <li>
                                         <input id="check-bb5" type="checkbox" name="check" checked>
                                         <label for="check-bb5">Con Domicilio</label>
@@ -176,4 +183,91 @@
         $(this).toggleClass("active-hidden-opt-btn").find("span").text($(this).find("span").text() === 'Cerrar opciones' ? 'Más opciones' : 'Cerrar opciones');
         $(".hidden-listing-filter").slideToggle(400);
     });
+
+    function getSubCategoria(seletOpt) {
+
+        var categoria_id = seletOpt.val()
+        $.ajax({
+            type: "POST",
+            url: "model/getSubCategorias.php?cateria_id=" + categoria_id,
+            dataType: "html",
+            data: $(this).serialize(),
+            beforeSend: function() {
+                //imagenesCarga();
+            },
+            error: function(response, quepaso, otroobj) {
+                alert('error recargando la pagina');
+                //            console.log(response);
+            },
+            success: function(response) {
+                $("#subCategoria").val();
+                var myObj = JSON.parse(response);
+
+                var x = document.getElementById("subCategoria");
+                var options = "";
+                if (myObj.length > 1) {
+                    for (var j = 0; j < myObj.length; j++) {
+                        options += "<option value='" + myObj[j].id + "'>" + myObj[j].nombre + "</option>"
+                    }
+                    x.innerHTML = options;
+                    $('.chosen-select').niceSelect("update");
+                } else {
+                    $("#subCategoria").val();
+                }
+
+            }
+        });
+    }
+
+    function mostrarRangosPrecios(check) {
+        if (check.is(':checked')) {
+            $("#rangosDePrecios").show("slow");
+        } else {
+            $("#rangosDePrecios").hide("slow")
+
+        }
+
+    }
+
+    function resultadosFiltrados() {
+
+        var palabrasClave = $("#palabrasClave").val();
+
+        var subCategoria = $("#subCategoria").val()
+        var Selectcategoria = $("#Selectcategoria").val()
+
+
+        console.log(subCategoria, Selectcategoria, categoria_id);
+
+        /*
+        $.ajax({
+            type: "POST",
+            url: "model/getSubCategorias.php?cateria_id=" + categoria_id,
+            dataType: "html",
+            data: $(this).serialize(),
+            beforeSend: function() {
+            },
+            error: function(response, quepaso, otroobj) {
+                alert('error recargando la pagina');
+            },
+            success: function(response) {
+                $("#subCategoria").val();
+                var myObj = JSON.parse(response);
+
+                var x = document.getElementById("subCategoria");
+                var options = "";
+                if (myObj.length > 1) {
+                    for (var j = 0; j < myObj.length; j++) {
+                        options += "<option value='" + myObj[j].id + "'>" + myObj[j].nombre + "</option>"
+                    }
+                    x.innerHTML = options;
+                    $('.chosen-select').niceSelect("update");
+                } else {
+                    $("#subCategoria").val();
+                }
+
+            }
+        });
+        */
+    }
 </script>
