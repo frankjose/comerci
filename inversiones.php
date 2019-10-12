@@ -372,7 +372,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
                 <!-- content end-->
             </div>
             <!--wrapper end -->
-            <!--footer -->
+            <!--footer -->    
             <footer class="main-footer">
                 <!--subscribe-wrap-->
                 <div class="subscribe-wrap color-bg  fl-wrap">

@@ -1,5 +1,6 @@
 (function ($) {
     "use strict";
+    var locations = [];
     var markerIcon = {
         anchor: new google.maps.Point(12, 0),
         url: 'images/marker.png',
@@ -10,7 +11,7 @@
             return ('<div class="map-popup-wrap"><div class="map-popup"><div class="infoBox-close"><i class="far fa-times"></i></div><a href="' + locationURL + '" class="listing-img-content fl-wrap"><img src="' + locationImg + '" alt=""><span class="map-popup-location-price"><strong>Awg/Night</strong>' + locationPrice + '</span></a> <div class="listing-content fl-wrap"><div class="card-popup-raining map-card-rainting" data-staRrating="' + locationStarRating + '"></div><div class="listing-title fl-wrap"><h4><a href=' + locationURL + '>' + locationTitle + '</a></h4><span class="map-popup-location-info"><i class="fas fa-map-marker-alt"></i>' + locationAddress + '</span></div></div></div></div>')
         }
 	    //  Map Infoboxes ------------------
-        var locations = [
+         locations = [
             [locationData('listing-single2.html', 'images/gal/8.jpg', 'Premium Plaza Hotel', "1327 Intervale Ave, Bronx, NY, USA", "$ 320", "5"), 3.263017, -76.538459, 0, markerIcon],
             [locationData('listing-single.html', 'images/gal/4.jpg', 'Grand Hero Palace', "W 85th St, NY, USA ", "$ 120", "4"), 3.260447, -76.539425, 1, markerIcon],
             [locationData('listing-single.html', 'images/gal/6.jpg', 'Park Central', "40 Journal Square Plaza, NJ,  USA", "$ 50", "5"), 3.263017, -76.538416, 2, markerIcon],
@@ -21,6 +22,8 @@
             [locationData('listing-single2.html', 'images/gal/7.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "$70", "5"), 3.262589, -76.542922, 7, markerIcon],
 
         ];
+
+
 	    //   Map Infoboxes end ------------------
         var map = new google.maps.Map(document.getElementById('map-main'), {
             zoom: 14.5,
@@ -104,7 +107,9 @@
             height: 50,
             width: 50
         }];
+        console.log(locations.length)
         for (i = 0; i < locations.length; i++) {
+            console.log(locations[i][1], locations[i][2]);
             var labels = '123456789';
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -263,6 +268,7 @@
     }
     var map = document.getElementById('map-main');
     if (typeof (map) != 'undefined' && map != null) {
+        
         google.maps.event.addDomListener(window, 'load', mainMap);
     }
 })(this.jQuery);

@@ -13,7 +13,6 @@ function loadComponent(url, divCarga){
 //            console.log(response);
         },
         success:function(response){
-          
             $(divCarga).html(response);
             
            

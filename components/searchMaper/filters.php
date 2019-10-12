@@ -46,7 +46,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
             <div class="col-list-search-input-item fl-wrap location autocomplete-container">
                 <label>Sub Categoría</label>
                 <div class="listsearch-input-item">
-                    <select data-placeholder="City" class="chosen-select" id="subCategoria"> 
+                    <select data-placeholder="City" class="chosen-select" id="subCategoria">
 
                     </select>
                 </div>
@@ -91,7 +91,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
             <br>
             <!-- col-list-search-input-item end -->
             <!-- col-list-search-input-item -->
-         
+
             <!-- col-list-search-input-item end -->
             <!-- hidden-listing-filter -->
             <div class="hidden-listing-filter fl-wrap">
@@ -171,6 +171,8 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
     </div>
 </div>
 <script>
+    $('.chosen-select').niceSelect();
+
     $(".range-slider").ionRangeSlider({
         type: "double",
         keyboard: true
@@ -236,38 +238,14 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
         var subCategoria = $("#subCategoria").val()
         var Selectcategoria = $("#Selectcategoria").val()
 
+        var dataToSend = "";
 
-        console.log(subCategoria, Selectcategoria, categoria_id);
+        dataToSend = (palabrasClave) ? "palabrasClave=" + palabrasClave + "&" : '';
+        dataToSend += (subCategoria) ? "subCategoria=" + subCategoria + "&" : '';
+        dataToSend += (Selectcategoria && Selectcategoria !== "Todos") ? "Selectcategoria=" + Selectcategoria + "&" : '';
+        console.log(dataToSend);
+        loadComponent('components/searchMaper/results.php?' + dataToSend, '.result-search-container');
 
-        /*
-        $.ajax({
-            type: "POST",
-            url: "model/getSubCategorias.php?cateria_id=" + categoria_id,
-            dataType: "html",
-            data: $(this).serialize(),
-            beforeSend: function() {
-            },
-            error: function(response, quepaso, otroobj) {
-                alert('error recargando la pagina');
-            },
-            success: function(response) {
-                $("#subCategoria").val();
-                var myObj = JSON.parse(response);
 
-                var x = document.getElementById("subCategoria");
-                var options = "";
-                if (myObj.length > 1) {
-                    for (var j = 0; j < myObj.length; j++) {
-                        options += "<option value='" + myObj[j].id + "'>" + myObj[j].nombre + "</option>"
-                    }
-                    x.innerHTML = options;
-                    $('.chosen-select').niceSelect("update");
-                } else {
-                    $("#subCategoria").val();
-                }
-
-            }
-        });
-        */
     }
 </script>
