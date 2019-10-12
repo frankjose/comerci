@@ -258,7 +258,7 @@
                         <div class="wave-bg wave-bg2"></div>
                         <div class="container">
                             <div class="dasboard-wrap fl-wrap">
-                                <div class="dasboard-breadcrumbs breadcrumbs"><a href="#">Home</a><a href="#">Dashboard</a><span>Profile page</span></div>
+                                <div class="dasboard-breadcrumbs breadcrumbs"><a href="#">Inicio</a><a href="#">Crea tu negocio</a><span>Perfil</span></div>
                                 <!--dasboard-sidebar-->
                                 <div class="dasboard-sidebar">
                                     <div class="dasboard-sidebar-content fl-wrap">
@@ -266,29 +266,26 @@
                                             <img src="images/avatar/1.jpg" alt="">
                                         </div>
                                         <div class="dasboard-sidebar-item fl-wrap">
-                                            <h3>
-                                                <span>Welcome </span>
-                                                Jessie Manrty
+                                        <h3>
+                                                <span>Bienvenido </span>
+                                                Alejandrina Reyes
                                             </h3>
                                         </div>
-                                        <a href="dashboard-add-listing.html" class="ed-btn">Add Hotel</a>                                        
+                                        <a href="dashboard-add-listing.php" class="ed-btn">Agregar productos</a>                                        
                                         <div class="user-stats fl-wrap">
                                             <ul>
                                                 <li>
-                                                    Listings	
+                                                    Productos	
                                                     <span>4</span>
                                                 </li>
+
                                                 <li>
-                                                    Bookings
-                                                    <span>32</span>	
-                                                </li>
-                                                <li>
-                                                    Reviews	
+                                                    Opiniones	
                                                     <span>9</span>	
                                                 </li>
-                                            </ul>
+                                           </ul>
                                         </div>
-                                        <a href="#" class="log-out-btn color-bg">Log Out <i class="far fa-sign-out"></i></a>
+                                        <a href="#" class="log-out-btn color-bg">Salir <i class="far fa-sign-out"></i></a>
                                     </div>
                                 </div>
                                 <!--dasboard-sidebar end--> 
@@ -297,33 +294,25 @@
                                     <div class="dasboard-menu-btn color3-bg">Dashboard Menu <i class="fal fa-bars"></i></div>
                                     <ul class="dasboard-menu-wrap">
                                         <li>
-                                            <a href="dashboard.html" class="user-profile-act"><i class="far fa-user"></i>Profile</a>
+                                            <a href="dashboard-myprofile.php"><i class="far fa-user"></i>Perfil</a>
                                             <ul>
-                                                <li><a href="dashboard-myprofile.html">Edit profile</a></li>
-                                                <li><a href="dashboard-password.html">Change Password</a></li>
+                                            <li><a href="dashboard-myprofile.php">Editar Perfil</a></li>
+                                                <li><a href="dashboard-password.php">Cambiar contraseña</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="dashboard-messages.html"><i class="far fa-envelope"></i> Messages <span>3</span></a></li>
                                         <li>
-                                            <a href="dashboard-listing-table.html"><i class="far fa-th-list"></i> My listigs  </a>
-                                            <ul>
-                                                <li><a href="#">Active</a><span>5</span></li>
-                                                <li><a href="#">Pending</a><span>2</span></li>
-                                                <li><a href="#">Expire</a><span>3</span></li>
-                                            </ul>
+                                            <a href="dashboard-listing-table.php"><i class="far fa-th-list"></i> Mis productos  </a>
+                                            <!-- <ul>
+                                                <li><a href="#">Entradas</a><span>5</span></li>
+                                                <li><a href="#">Comidas</a><span>2</span></li>
+                                                <li><a href="#">Bebidas</a><span>3</span></li>
+                                            </ul> -->
                                         </li>
-                                        <li><a href="dashboard-bookings.html"> <i class="far fa-calendar-check"></i> Bookings <span>2</span></a></li>
-                                        <li><a href="dashboard-review.html"><i class="far fa-comments"></i> Reviews </a></li>
+                                        <li><a href="dashboard-review.html"><i class="far fa-comments"></i> Opiniones </a></li>
                                     </ul>
                                 </div>
                                 <!--dasboard-menu end-->
-                                <!--Tariff Plan menu-->
-                                <div   class="tfp-btn"><span>Tariff Plan : </span> <strong>Extended</strong></div>
-                                <div class="tfp-det">
-                                    <p>You Are on <a href="#">Extended</a> . Use link bellow to view details or upgrade. </p>
-                                    <a href="#" class="tfp-det-btn color2-bg">Details</a>
-                                </div>
-                                <!--Tariff Plan menu end-->
+               
                             </div>
                         </div>
                     </section>
@@ -335,26 +324,91 @@
                             <div class="dasboard-wrap fl-wrap">
                                 <!-- dashboard-content--> 
                                 <div class="dashboard-content fl-wrap">
-                                    <div class="box-widget-item-header">
-                                        <h3> Change Password</h3>
+                                    <div class="dashboard-list-box fl-wrap">
+                                        <div class="dashboard-header fl-wrap">
+                                            <h3>Mis productos</h3>
+                                        </div>
+                                        <!-- dashboard-list  -->    
+                                        <div class="dashboard-list">
+                                            <div class="dashboard-message">
+                                                <span class="new-dashboard-item">Agregar</span>
+                                                <div class="dashboard-listing-table-image">
+                                                    <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="dashboard-listing-table-text">
+                                                    <h4><a href="listing-single.html">PUESTO DE GALLINA </a></h4>
+                                                    <span class="dashboard-listing-table-address"><i class="far fa-map-marker"></i><a  href="#">Restaurante Doña Aleja
+                                                        <p>Plato de sancocho de gallina, para 1 persona con gallina o pollo sudado y/o a la brasa con rica ensalada y arroz.</p>
+                                                    <p>$27.000</p></a></span>
+                                                    
+                                                    <ul class="dashboard-listing-table-opt  fl-wrap">
+                                                        <li><a href="#">Editar <i class="fal fa-edit"></i></a></li>
+                                                        <li><a href="#" class="del-btn">Borrar <i class="fal fa-trash-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- dashboard-list end-->    
+                                        <!-- dashboard-list -->    
+                                        <div class="dashboard-list">
+                                            <div class="dashboard-message">
+                                                <div class="dashboard-listing-table-image">
+                                                    <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="dashboard-listing-table-text">
+                                                    <h4><a href="listing-single.html">Grand Hero Palace</a></h4>
+                                                    <span class="dashboard-listing-table-address"><i class="far fa-map-marker"></i><a  href="#"> W 85th St, New York,  USA</a></span>
+                                                    <ul class="dashboard-listing-table-opt  fl-wrap">
+                                                        <li><a href="#">Edit <i class="fal fa-edit"></i></a></li>
+                                                        <li><a href="#" class="del-btn">Delete <i class="fal fa-trash-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- dashboard-list end-->                                               
+                                        <!-- dashboard-list  -->    
+                                        <div class="dashboard-list">
+                                            <div class="dashboard-message">
+                                                <div class="dashboard-listing-table-image">
+                                                    <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="dashboard-listing-table-text">
+                                                    <h4><a href="listing-single.html">Park Central</a></h4>
+                                                    <span class="dashboard-listing-table-address"><i class="far fa-map-marker"></i><a  href="#">40 Journal Square Plaza, NJ,  USA</a></span>
+                                                    <ul class="dashboard-listing-table-opt  fl-wrap">
+                                                        <li><a href="#">Edit <i class="fal fa-edit"></i></a></li>
+                                                        <li><a href="#" class="del-btn">Delete <i class="fal fa-trash-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- dashboard-list end-->   
+                                        <!-- dashboard-list  -->    
+                                        <div class="dashboard-list">
+                                            <div class="dashboard-message">
+                                                <div class="dashboard-listing-table-image">
+                                                    <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="dashboard-listing-table-text">
+                                                    <h4><a href="listing-single.html">Gold Plaza Hotel </a></h4>
+                                                    <span class="dashboard-listing-table-address"><i class="far fa-map-marker"></i><a  href="#">34-42 Montgomery St , NY, USA</a></span>
+                                                    <ul class="dashboard-listing-table-opt  fl-wrap">
+                                                        <li><a href="#">Edit <i class="fal fa-edit"></i></a></li>
+                                                        <li><a href="#" class="del-btn">Delete <i class="fal fa-trash-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- dashboard-list end-->  
                                     </div>
-                                    <div class="custom-form no-icons">
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <label>Current Password</label>
-                                            <input type="password" class="pass-input" placeholder="" value=""/>
-                                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                        </div>
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <label>New Password</label>
-                                            <input type="password" class="pass-input" placeholder="" value=""/>
-                                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                        </div>
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <label>Confirm New Password</label>
-                                            <input type="password" class="pass-input" placeholder="" value=""/>
-                                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                        </div>
-                                        <button class="btn  big-btn  color2-bg flat-btn float-btn">Save Changes<i class="fal fa-save"></i></button>
+                                    <!-- pagination-->
+                                    <div class="pagination">
+                                        <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
+                                        <a href="#">1</a>
+                                        <a href="#" class="current-page">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
                                     </div>
                                 </div>
                                 <!-- dashboard-list-box end--> 

@@ -5,7 +5,7 @@
                         <div class="logo-holder">
                            <a href="index.html"><img src="images/LOGO_logo.png" alt=""></a>
                         </div>
-                        <a href="dashboard-add-listing.html" class="add-hotel">Crea tu negocio <span><i class="far fa-plus"></i></span></a>                     
+                        <a href="dashboard-add-listing.php" class="add-hotel">Crea tu negocio <span><i class="far fa-plus"></i></span></a>                     
                         <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Entrar</div>
                   
                     </div>
