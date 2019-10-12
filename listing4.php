@@ -598,7 +598,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="subscribe-header">
-                                    <h3>Subscribe</h3>
+                                    <h3>suscrbirse</h3>
                                     <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
                                 </div>
                             </div>
@@ -629,7 +629,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="footer-carousel-title">
-                                        Our partners
+                                        Nuestros patrocinadores
                                     </div>
                                 </div>
                                 <div class="col-md-9">
