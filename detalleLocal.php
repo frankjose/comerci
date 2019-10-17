@@ -23,7 +23,24 @@ if (isset($_GET["establecimiento_id"])) {
     WHERE p.establecimiento_id = ". $_GET["establecimiento_id"]."
     ");
     $NombreCategoria = mysqli_fetch_assoc($categoria);
-    
+
+    $queryFotos = $mySQL->efectuarConsulta("    
+    SELECT 
+    p.foto
+    FROM
+    commerci.productos p 
+    WHERE p.establecimiento_id = ". $_GET["establecimiento_id"]."
+    ");
+    $dataFotos = "";
+    $arrayFotos = array();
+    while ($row = mysqli_fetch_assoc($queryFotos)){
+        
+      
+      $dataFotos .= "{'src': '".$row['foto']."'},";
+      array_push($arrayFotos, $row['foto']);
+    }
+       
+   
 }
 ?>
 
@@ -69,7 +86,7 @@ if (isset($_GET["establecimiento_id"])) {
             <div class="content">
                 <!--  section  -->
                 <section class="list-single-hero" data-scrollax-parent="true" id="sec1">
-                    <div class="bg par-elem " data-bg="images/bg/1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                    <div class="bg par-elem " data-bg="<?php echo $result["banner"]?>" data-scrollax="properties: { translateY: '30%' }"></div>
                     <div class="list-single-hero-title fl-wrap">
                         <div class="container">
                             <div class="row">
@@ -208,8 +225,8 @@ if (isset($_GET["establecimiento_id"])) {
                                             <div class="gallery-item ">
                                                 <div class="grid-item-holder">
                                                     <div class="box-item">
-                                                        <img src="images/establecimientos/plato-a-la-carta-doña-aleja.jpg" alt="">
-                                                        <a href="images/establecimientos/plato-a-la-carta-doña-aleja.jpg" class="gal-link popup-image"><i class="fa fa-search"></i></a>
+                                                        <img src="<?php echo $arrayFotos[0] ?>" alt="">
+                                                        <a href="<?php echo $arrayFotos[0] ?>" class="gal-link popup-image"><i class="fa fa-search"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -218,8 +235,8 @@ if (isset($_GET["establecimiento_id"])) {
                                             <div class="gallery-item">
                                                 <div class="grid-item-holder">
                                                     <div class="box-item">
-                                                        <img src="images/establecimientos/restaurante-donaaleja12.jpg" alt="">
-                                                        <a href="images/establecimientos/restaurante-donaaleja12.jpg" class="gal-link popup-image"><i class="fa fa-search"></i></a>
+                                                        <img src="<?php echo $arrayFotos[1] ?>" alt="">
+                                                        <a href="<?php echo $arrayFotos[1] ?>" class="gal-link popup-image"><i class="fa fa-search"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,8 +245,8 @@ if (isset($_GET["establecimiento_id"])) {
                                             <div class="gallery-item gallery-item-second">
                                                 <div class="grid-item-holder">
                                                     <div class="box-item">
-                                                        <img src="images/establecimientos/sancocho-aleja.jpg" alt="">
-                                                        <a href="images/establecimientos/sancocho-aleja.jpg" class="gal-link popup-image"><i class="fa fa-search"></i></a>
+                                                        <img src="<?php echo $arrayFotos[2] ?>" alt="">
+                                                        <a href="<?php echo $arrayFotos[2] ?>" class="gal-link popup-image"><i class="fa fa-search"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -240,7 +257,10 @@ if (isset($_GET["establecimiento_id"])) {
                                                 <div class="grid-item-holder">
                                                     <div class="box-item">
                                                         <img src="images/gal/1.jpg" alt="">
-                                                        <div class="more-photos-button dynamic-gal" data-dynamicPath="[{'src': 'images/gal/1.jpg'}, {'src': 'images/gal/1.jpg'},{'src': 'images/gal/1.jpg'}]">Más <span>4 Fotos</span><i class="far fa-long-arrow-right"></i></div>
+                                                        <div class="more-photos-button dynamic-gal" 
+                                                        data-dynamicPath="<?php  echo $dataFotos; ?>">
+                                                        Más <span>4 Fotos</span>
+                                                        <i class="far fa-long-arrow-right"></i></div>
                                                     </div>
                                                 </div>
                                             </div>

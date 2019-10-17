@@ -8,18 +8,18 @@
     }
     function mainMap() {
         function locationData(locationURL, locationImg, locationTitle, locationAddress, locationPrice, locationStarRating) {
-            return ('<div class="map-popup-wrap"><div class="map-popup"><div class="infoBox-close"><i class="far fa-times"></i></div><a href="' + locationURL + '" class="listing-img-content fl-wrap"><img src="' + locationImg + '" alt=""><span class="map-popup-location-price"><strong>Awg/Night</strong>' + locationPrice + '</span></a> <div class="listing-content fl-wrap"><div class="card-popup-raining map-card-rainting" data-staRrating="' + locationStarRating + '"></div><div class="listing-title fl-wrap"><h4><a href=' + locationURL + '>' + locationTitle + '</a></h4><span class="map-popup-location-info"><i class="fas fa-map-marker-alt"></i>' + locationAddress + '</span></div></div></div></div>')
+            return ('<div class="map-popup-wrap"><div class="map-popup"><div class="infoBox-close"><i class="far fa-times"></i></div><a href="' + locationURL + '" class="listing-img-content fl-wrap"><img src="' + locationImg + '" alt=""><span class="map-popup-location-price"><strong>Abierto</strong>' + locationPrice + '</span></a> <div class="listing-content fl-wrap"><div class="card-popup-raining map-card-rainting" data-staRrating="' + locationStarRating + '"></div><div class="listing-title fl-wrap"><h4><a href=' + locationURL + '>' + locationTitle + '</a></h4><span class="map-popup-location-info"><i class="fas fa-map-marker-alt"></i>' + locationAddress + '</span></div></div></div></div>')
         }
 	    //  Map Infoboxes ------------------
          locations = [
-            [locationData('listing-single2.html', 'images/gal/8.jpg', 'Premium Plaza Hotel', "1327 Intervale Ave, Bronx, NY, USA", "$ 320", "5"), 3.263017, -76.538459, 0, markerIcon],
-            [locationData('listing-single.html', 'images/gal/4.jpg', 'Grand Hero Palace', "W 85th St, NY, USA ", "$ 120", "4"), 3.260447, -76.539425, 1, markerIcon],
-            [locationData('listing-single.html', 'images/gal/6.jpg', 'Park Central', "40 Journal Square Plaza, NJ,  USA", "$ 50", "5"), 3.263017, -76.538416, 2, markerIcon],
-            [locationData('listing-single.html', 'images/gal/2.jpg', 'Holiday Home', "75 Prince St,  NY, USA", "$ 50", "3"), 3.264131, -76.539339, 3, markerIcon],
-            [locationData('listing-single.html', 'images/gal/3.jpg', 'Gold Plaza Hotel', "34-42 Montgomery St, New York, NY", "$ 210", "5"), 3.260939, -76.542794, 4, markerIcon],
-            [locationData('listing-single.html', 'images/gal/5.jpg', 'Moonlight Hotel', "70 Bright St, Jersey City, NJ", "$ 105", "4"), 3.266916, -76.537622, 5, markerIcon],
-            [locationData('listing-single.html', 'images/gal/1.jpg', 'Zebra Premium Hotel', "123 School St. Lynchburg, NY ", "$ 115", "3"), 3.259161, -76.532301, 6, markerIcon],
-            [locationData('listing-single2.html', 'images/gal/7.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "$70", "5"), 3.262589, -76.542922, 7, markerIcon],
+            [locationData('listing-single2.html', 'images/productos/gallina_familiar.jpg', 'Restaurante Doña Aleja', "Cra. 9a ## 15b-18", "$ 320", "5"), 3.234163, -76.568006, 0, markerIcon],
+            [locationData('listing-single.html', 'images/productos/hamburguesa_angus.jpg', 'HAMBURGUESAS BARBAROS', "Cra. 9a ## 15b-18", "$ 120", "4"), 3.264991, -76.536907, 1, markerIcon],
+            [locationData('listing-single.html', 'images/establecimientos/darsalud.png', 'DARSALUD', " Cl. 13 #11-03", "$ 50", "5"), 3.264879, -76.539593, 2, markerIcon],
+            [locationData('listing-single.html', 'images/gal/2.jpg', 'Drogas Sebastian', "Carrera 10 # 5 - 37 ", "$ 50", "3"), 3.260093,  -76.543867, 3, markerIcon],
+            [locationData('listing-single.html', 'images/establecimientos/licores_grande.jpg', 'ESTANCO EL CORSO', "Calle 18a # 8a - 101 ", "$ 210", "5"), 3.265185, -76.536475, 4, markerIcon],
+            [locationData('listing-single.html', 'images/establecimientos/la-flecha.jpg', 'COMERCIALIZADORA LA FLECHA S.A.S', "Carrera 11 # 7 - 81", "$ 105", "4"), 3.262022,-76.542646, 5, markerIcon],
+            [locationData('listing-single.html', 'images/establecimientos/logo-cafe.jpeg', 'Café Xamundí', " ", "$ 115", "3"), 3.262058, -76.540470, 6, markerIcon],
+            [locationData('listing-single2.html', 'images/inversiones/jugos_abuela.jpeg', 'Jugos de La Abuela', "calle 10 #8-117", "$70", "5"), 3.260280, -76.539800, 7, markerIcon],
 
         ];
 

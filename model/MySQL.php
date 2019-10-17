@@ -12,7 +12,7 @@
  class MySQL{
     
     //Datos de validacion para la conexion
-    private $ipServidor ="172.16.29.228";
+    private $ipServidor ="localhost";
     private $usuarioBase ='root';
     private $contrasena = '';
 

@@ -3,7 +3,6 @@
     <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>Easybook - Hotel Booking Directory Listing Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
@@ -485,7 +484,7 @@
                             <div class="col-md-6">
                                 <div class="subscribe-header">
                                     <h3>Subscribe</h3>
-                                    <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                    <p></p>
                                 </div>
                             </div>
                             <div class="col-md-1"></div>
@@ -651,7 +650,7 @@
                 <!--sub-footer-->
                 <div class="sub-footer">
                     <div class="container">
-                        <div class="copyright"> &#169; EasyBook 2018 .  All rights reserved.</div>
+                        <div class="copyright"> &#169;</div>
                         <div class="subfooter-lang">
                             <div class="subfooter-show-lang"><span>Eng</span><i class="fa fa-caret-up"></i></div>
                             <ul class="subfooter-lang-tooltip">

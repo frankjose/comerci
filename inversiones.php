@@ -382,7 +382,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
                             <div class="col-md-6">
                                 <div class="subscribe-header">
                                     <h3>suscrbirse</h3>
-                                    <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                    <p></p>
                                 </div>
                             </div>
                             <div class="col-md-1"></div>
@@ -548,7 +548,7 @@ $consulta = $mySQL->efectuarConsulta("SELECT * FROM commerci.categoria ");
                 <!--sub-footer-->
                 <div class="sub-footer">
                     <div class="container">
-                        <div class="copyright"> &#169; EasyBook 2018 .  All rights reserved.</div>
+                        <div class="copyright"> &#169; </div>
                         <div class="subfooter-lang">
                             <div class="subfooter-show-lang"><span>Eng</span><i class="fa fa-caret-up"></i></div>
                             <ul class="subfooter-lang-tooltip">
