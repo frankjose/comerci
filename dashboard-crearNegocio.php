@@ -77,13 +77,21 @@
                                 <div class="dasboard-menu-btn color3-bg">Dashboard Menu<i class="fal fa-bars"></i></div>
                                 <ul class="dasboard-menu-wrap">
                                     <li>
-                                        <a href="dashboard-myprofile.php" class="user-profile-act"><i class="far fa-user"></i>Perfil</a>
+                                        <a href="dashboard-crearNegocio.php" class="user-profile-act"><i class="far fa-user"></i>Perfil</a>
                                         <ul>
-                                            <li><a href="dashboard-myprofile.php">Editar Perfil</a></li>
-                                            <li><a href="dashboard-password.php">Cambiar contraseña</a></li>
+                                            <li><a href="dashboard-crearNegocio.php">Editar Perfil</a></li>
+                                            <li><a href="dashboard-contraseña.php">Cambiar contraseña</a></li>
                                         </ul>
                                     </li>
 
+                                    <li>
+                                            <a href="dashboard-crearProducto.php"><i class="far fa-th-list"></i> Mis productos  </a>
+                                            <!-- <ul>
+                                                <li><a href="#">Entradas</a><span>5</span></li>
+                                                <li><a href="#">Comidas</a><span>2</span></li>
+                                                <li><a href="#">Bebidas</a><span>3</span></li>
+                                            </ul> -->
+                                        </li>
                                     
                                 </ul>
                             </div>

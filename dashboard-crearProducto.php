@@ -3,7 +3,7 @@
     <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title></title>
+        <title>Commerci | Jamundí</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
@@ -14,7 +14,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="css/color.css">
         <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/favicon_32x32.png">
     </head>
     <body>
         <!--loader-->
@@ -266,7 +266,7 @@
                                             <img src="images/avatar/1.jpg" alt="">
                                         </div>
                                         <div class="dasboard-sidebar-item fl-wrap">
-                                            <h3>
+                                        <h3>
                                                 <span>Bienvenido </span>
                                                 Alejandrina Reyes
                                             </h3>
@@ -293,26 +293,26 @@
                                 <div class="dasboard-menu">
                                     <div class="dasboard-menu-btn color3-bg">Dashboard Menu <i class="fal fa-bars"></i></div>
                                     <ul class="dasboard-menu-wrap">
-                                    <li>
-                                            <a href="dashboard-myprofile.php" class="user-profile-act"><i class="far fa-user"></i>Perfil</a>
+                                        <li>
+                                            <a href="dashboard-crearNegocio.php"><i class="far fa-user"></i>Perfil</a>
                                             <ul>
-                                                <li><a href="dashboard-myprofile.php">Editar Perfil</a></li>
-                                                <li><a href="dashboard-password.php">Cambiar contraseña</a></li>
+                                            <li><a href="dashboard-crearNegocio.php">Editar Perfil</a></li>
+                                                <li><a href="dashboard-contraseña.php">Cambiar contraseña</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="dashboard-listing-table.php"><i class="far fa-th-list"></i> Mis productos  </a>
-                                            <ul>
+                                            <a href="dashboard-crearProducto.php"><i class="far fa-th-list"></i> Mis productos  </a>
+                                            <!-- <ul>
                                                 <li><a href="#">Entradas</a><span>5</span></li>
                                                 <li><a href="#">Comidas</a><span>2</span></li>
                                                 <li><a href="#">Bebidas</a><span>3</span></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
-                                        <li><a href="dashboard-review.html"><i class="far fa-comments"></i> Opiniones </a></li>
+                                        
                                     </ul>
                                 </div>
                                 <!--dasboard-menu end-->
-                                
+               
                             </div>
                         </div>
                     </section>
@@ -324,26 +324,58 @@
                             <div class="dasboard-wrap fl-wrap">
                                 <!-- dashboard-content--> 
                                 <div class="dashboard-content fl-wrap">
-                                    <div class="box-widget-item-header">
-                                        <h3> Cambiar contraseña</h3>
-                                    </div>
-                                    <div class="custom-form no-icons">
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <label>Contraseña Anterior</label>
-                                            <input type="password" class="pass-input" placeholder="" value=""/>
-                                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                    <div class="dashboard-list-box fl-wrap">
+                                        <div class="dashboard-header fl-wrap">
+                                            <h3>Mis productos</h3>
                                         </div>
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <label>Nueva Contraseña</label>
-                                            <input type="password" class="pass-input" placeholder="" value=""/>
-                                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                        <!-- dashboard-list  -->    
+                                        <div class="dashboard-list">
+                                            <div class="dashboard-message">
+                                                <span class="new-dashboard-item">Agregar</span>
+                                                <div class="dashboard-listing-table-image">
+                                                    <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="dashboard-listing-table-text">
+                                                    <h4><a href="listing-single.html">PUESTO DE GALLINA </a></h4>
+                                                    <span class="dashboard-listing-table-address"><i class="far fa-map-marker"></i><a  href="#">Restaurante Doña Aleja
+                                                        <p>Plato de sancocho de gallina, para 1 persona con gallina o pollo sudado y/o a la brasa con rica ensalada y arroz.</p>
+                                                    <p>$27.000</p></a></span>
+                                                    
+                                                    <ul class="dashboard-listing-table-opt  fl-wrap">
+                                                        <li><a href="#">Editar <i class="fal fa-edit"></i></a></li>
+                                                        <li><a href="#" class="del-btn">Borrar <i class="fal fa-trash-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <label>Confirmar nueva contraseña</label>
-                                            <input type="password" class="pass-input" placeholder="" value=""/>
-                                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                        <!-- dashboard-list end-->    
+                                        <!-- dashboard-list -->    
+                                        <div class="dashboard-list">
+                                            <div class="dashboard-message">
+                                                <div class="dashboard-listing-table-image">
+                                                    <a href="listing-single.html"><img src="images/gal/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="dashboard-listing-table-text">
+                                                    <h4><a href="listing-single.html">JARRA DE LIMONADA</a></h4>
+                                                    <span class="dashboard-listing-table-address"><i class="far fa-map-marker"></i><a  href="#"> W 85th St, New York,  USA</a></span>
+                                                    <ul class="dashboard-listing-table-opt  fl-wrap">
+                                                    <P>Jarra grande de limonada fresca y natural</P>
+                                                        <li><a href="#">Editar <i class="fal fa-edit"></i></a></li>
+                                                        <li><a href="#" class="del-btn">borrar <i class="fal fa-trash-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <button class="btn  big-btn  color2-bg flat-btn float-btn">Guardar<i class="fal fa-save"></i></button>
+                                        <!-- dashboard-list end-->                                               
+                                        
+                                    <!-- pagination-->
+                                    <div class="pagination">
+                                        <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
+                                        <a href="#">1</a>
+                                        <a href="#" class="current-page">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
                                     </div>
                                 </div>
                                 <!-- dashboard-list-box end--> 
@@ -356,204 +388,13 @@
                 <!-- content end-->
             </div>
             <!--wrapper end -->
-            <!--footer -->
-            <footer class="main-footer">
-                <!--subscribe-wrap-->
-                <div class="subscribe-wrap color-bg  fl-wrap">
-                    <div class="container">
-                        <div class="sp-bg"> </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="subscribe-header">
-                                    <h3>Subscribe</h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-5">
-                                <div class="footer-widget fl-wrap">
-                                    <div class="subscribe-widget fl-wrap">
-                                        <div class="subcribe-form">
-                                            <form id="subscribe">
-                                                <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Enter Your Email" spellcheck="false" type="text">
-                                                <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fas fa-rss-square"></i> Subscribe</button>
-                                                <label for="subscribe-email" class="subscribe-message"></label>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wave-bg"></div>
-                </div>
-                <!--subscribe-wrap end -->
-                <!--footer-inner-->
-                <div class="footer-inner">
-                    <div class="container">
-                        <!--footer-fw-widget-->
-                        <div class="footer-fw-widget fl-wrap">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="footer-carousel-title">
-                                        Our partners
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <!--footer-carousel-wrap-->
-                                    <div class="footer-carousel-wrap fl-wrap">
-                                        <div class="footer-carousel fl-wrap">
-                                            <!--footer-carousel-item-->
-                                            <div class="footer-carousel-item">
-                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
-                                            </div>
-                                            <!--footer-carousel-item end-->
-                                            <!--footer-carousel-item-->
-                                            <div class="footer-carousel-item">
-                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
-                                            </div>
-                                            <!--footer-carousel-item end-->                             
-                                            <!--footer-carousel-item-->
-                                            <div class="footer-carousel-item">
-                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
-                                            </div>
-                                            <!--footer-carousel-item end-->
-                                            <!--footer-carousel-item-->
-                                            <div class="footer-carousel-item">
-                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
-                                            </div>
-                                            <!--footer-carousel-item end-->      
-                                            <!--footer-carousel-item-->
-                                            <div class="footer-carousel-item">
-                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
-                                            </div>
-                                            <!--footer-carousel-item end-->
-                                            <!--footer-carousel-item-->
-                                            <div class="footer-carousel-item">
-                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
-                                            </div>
-                                            <!--footer-carousel-item end-->                                     
-                                        </div>
-                                        <div class="fc-cont  fc-cont-prev"><i class="fal fa-angle-left"></i></div>
-                                        <div class="fc-cont  fc-cont-next"><i class="fal fa-angle-right"></i></div>
-                                    </div>
-                                    <!--footer-carousel-wrap end-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--footer-fw-widget end-->
-                        <div class="row">
-                            <!--footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget fl-wrap">
-                                    <h3>About Us</h3>
-                                    <div class="footer-contacts-widget fl-wrap">
-                                        <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
-                                        <ul  class="footer-contacts fl-wrap">
-                                            <li><span><i class="fal fa-envelope"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
-                                            <li> <span><i class="fal fa-map-marker-alt"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
-                                            <li><span><i class="fal fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
-                                        </ul>
-                                        <div class="footer-social">
-                                            <span>Find us : </span>
-                                            <ul>
-                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--footer-widget end-->
-                            <!--footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget fl-wrap">
-                                    <h3>Our Last News</h3>
-                                    <div class="widget-posts fl-wrap">
-                                        <ul>
-                                            <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Vivamus dapibus rutrum</a>
-                                                    <span class="widget-posts-date"> 21 Mar 09.05 </span>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title=""> In hac habitasse platea</a>
-                                                    <span class="widget-posts-date"> 7 Mar 18.21 </span>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Tortor tempor in porta</a>
-                                                    <span class="widget-posts-date"> 7 Mar 16.42 </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--footer-widget end-->
-                            <!--footer-widget -->
-                            <div class="col-md-4">
-                                <div class="footer-widget fl-wrap">
-                                    <h3>Our  Twitter</h3>
-                                    <div id="footer-twiit" class="fl-wrap"></div>
-                                    <a href="#" class="twitter-link" target="_blank">Follow</a>
-                                </div>
-                            </div>
-                            <!--footer-widget end-->
-                        </div>
-                        <div class="clearfix"></div>
-                        <!--footer-widget -->
-                        <div class="footer-widget">
-                            <div class="row">
-                                <div class="col-md-4"><a class="contact-btn color-bg" href="contact.html">Get In Touch<i class="fal fa-envelope"></i></a></div>
-                                <div class="col-md-8">
-                                    <div class="customer-support-widget fl-wrap">
-                                        <h4>Customer support : </h4>
-                                        <a href="tel:+19012300888" class="cs-mumber">+1(901)2300888</a>
-                                        <a href="tel:+19012300888" class="cs-mumber-button color2-bg">Call Now <i class="far fa-phone-volume"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--footer-widget end -->
-                    </div>
-                </div>
-                <!--footer-inner end -->
-                <div class="footer-bg">
-                </div>
-                <!--sub-footer-->
-                <div class="sub-footer">
-                    <div class="container">
-                        <div class="copyright"> &#169; </div>
-                        <div class="subfooter-lang">
-                            <div class="subfooter-show-lang"><span>Eng</span><i class="fa fa-caret-up"></i></div>
-                            <ul class="subfooter-lang-tooltip">
-                                <li><a href="#">Dutch</a></li>
-                                <li><a href="#">Italian</a></li>
-                                <li><a href="#">French</a></li>
-                                <li><a href="#">Spanish</a></li>
-                            </ul>
-                        </div>
-                        <div class="subfooter-nav">
-                            <ul>
-                                <li><a href="#">Terms of use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--sub-footer end -->
-            </footer>
-            <!--footer end -->
+        <!--footer -->
+        <footer class="main-footer">
+            <!--subscribe-wrap-->
+
+            <!--sub-footer end -->
+        </footer>
+        <!--footer end -->
             <!--map-modal -->
             <div class="map-modal-wrap">
                 <div class="map-modal-wrap-overlay"></div>
@@ -642,5 +483,8 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEYHERE&libraries=places&callback=initAutocomplete"></script>        
+    
+        <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/componentsBuilder.js"></script>
     </body>
 </html>
